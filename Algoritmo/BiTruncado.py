@@ -1,18 +1,21 @@
 #! /usr/bin/env python
 #----------------------------------------------------------------------------------------------
-#Modificacao do codigo 
-#HULK - HTTP Unbearable Load King 
-#author :  Barry Shteiman , version 1.0
-#Nova Versao autores: Rafael Viana | Ramon 
+#Modificacao do codigo HULK - HTTP Unbearable Load King - Barry Shteiman , version 1.0
+#
+#  
+#Nova Versao autores: Rafael Viana
+#                     Ramon Santos
+# 
 # ----------------------------------------------------------------------------------------------
-import urllib2
-import sys
-import threading
-import random
-import re
 
-#global params
-url=''
+import urllib2 # biblioteca para requisicoes http diferente de urllib
+import sys # biblioteca fornce informacao sobre o python como exemplo (Constantes, funcoes e metodos)
+import threading # biblioteca de thread para python
+import random #biblioteca que possue metodo randomico
+import re #biblioteca de expressoes regulares em python
+
+# variaveis globais.
+url='' #
 host=''
 headers_useragents=[]
 headers_referers=[]
@@ -67,8 +70,7 @@ def buildblock(size):
 
 def usage():
 	print '---------------------------------------------------'
-	print 'USAGE: python hulk.py <url>'
-	print 'you can add "safe" after url, to autoshut after dos'
+	print 'Usar: python BitTruncado.py <url>'
 	print '---------------------------------------------------'
 
 	
