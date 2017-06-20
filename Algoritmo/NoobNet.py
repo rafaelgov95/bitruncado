@@ -2,6 +2,7 @@
 #Teste http://www.conesulnews.com.br/
 #Teste http://pesqueirobarrancofundo.com/
 #Teste http://idest.com.br/
+#Teste http://www.bosontreinamentos.com.br/
 #----------------------------------------------------------------------------------------------
 #  Ataque por DoS negacao de servico inundacao versao 1.0.1
 # Nova Versao autores: Rafael Viana
