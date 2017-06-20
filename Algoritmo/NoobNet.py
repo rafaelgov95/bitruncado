@@ -1,4 +1,6 @@
 #! /usr/bin/env python
+#Teste http://www.conesulnews.com.br/
+#Teste http://pesqueirobarrancofundo.com
 #----------------------------------------------------------------------------------------------
 #  Ataque por DoS negacao de servico inundacao versao 1.0.1
 # Nova Versao autores: Rafael Viana
@@ -6,7 +8,7 @@
 # 
 # ----------------------------------------------------------------------------------------------
 
-import urllib2 # biblioteca para requisicoes http diferente de urllib
+import urllib2 # biblioteca para requisicoes http diferente de urllib http
 import sys # biblioteca fornce informacao sobre o python como exemplo (Constantes, funcoes e metodos)
 import threading # biblioteca de thread para python
 import random #biblioteca que possue metodo randomico
