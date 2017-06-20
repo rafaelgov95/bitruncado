@@ -9,7 +9,6 @@
 #                      Ramon Santos
 # 
 # ----------------------------------------------------------------------------------------------
-
 import urllib2 # biblioteca para requisicoes http diferente de urllib http
 import sys # biblioteca fornce informacao sobre o python como exemplo (Constantes, funcoes e metodos)
 import threading # biblioteca de thread para python
