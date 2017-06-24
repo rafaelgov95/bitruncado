@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Debian) (preloaded format=xelatex 2017.6.24)  24 JUN 2017 16:04
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Debian) (preloaded format=xelatex 2017.6.24)  24 JUN 2017 16:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -955,17 +955,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 47--48
 
  []
 
-(./DDoS-Defense-by-Offense.bbl
 
-Package natbib Warning: Empty `thebibliography' environment on input line 3.
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
 
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 59.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+
+ []
+
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/sl' in size <12> not avai
 lable
 (Font)              Font shape `TU/TimesNewRoman(0)/m/it' tried instead on inpu
-t line 59.
-
+t line 57.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -979,18 +987,25 @@ File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 [1
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 59.
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
+
+ []
+
+(./DDoS-Defense-by-Offense.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 69.
+ [2]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 69.
  (./DDoS-Defense-by-Offense.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 59.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 59.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 69.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 69.
  ) 
 Here is how much of TeX's memory you used:
- 20120 strings out of 493068
- 392448 string characters out of 6137720
- 446659 words of memory out of 5000000
- 23870 multiletter control sequences out of 15000+600000
- 7343 words of font info for 32 fonts, out of 8000000 for 9000
+ 20130 strings out of 493068
+ 392704 string characters out of 6137720
+ 449691 words of memory out of 5000000
+ 23879 multiletter control sequences out of 15000+600000
+ 7351 words of font info for 33 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
- 39i,11n,66p,10437b,336s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,11n,66p,10437b,337s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on DDoS-Defense-by-Offense.pdf (1 page).
+Output written on DDoS-Defense-by-Offense.pdf (2 pages).

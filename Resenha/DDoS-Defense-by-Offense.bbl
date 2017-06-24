@@ -1,3 +1,10 @@
 \begin{thebibliography}{}
 
+\bibitem[\protect\astroncite{Walfish
+  et~al.}{2006}]{Walfish:2006:DDO:1151659.1159948}
+Walfish, M., Vutukuru, M., Balakrishnan, H., Karger, D., and Shenker, S.
+  (2006).
+\newblock Ddos defense by offense.
+\newblock {\em SIGCOMM Comput. Commun. Rev.}, 36(4):303--314.
+
 \end{thebibliography}
