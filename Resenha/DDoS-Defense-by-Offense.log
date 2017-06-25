@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Debian) (preloaded format=xelatex 2017.6.24)  24 JUN 2017 21:59
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Debian) (preloaded format=xelatex 2017.6.24)  25 JUN 2017 12:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -953,7 +953,7 @@ LaTeX Info: Redefining \nameref on input line 34.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/sl' in size <12> not avai
 lable
 (Font)              Font shape `TU/TimesNewRoman(0)/m/it' tried instead on inpu
-t line 60.
+t line 59.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -968,27 +968,32 @@ File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 [1
 
 ]
-Missing character: There is no ǵ in font Times New Roman/OT:mapping=tex-text;!
-Missing character: There is no ​ in font Times New Roman/OT:mapping=tex-text;!
-LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/bx/sl' in size <12> not ava
-ilable
-(Font)              Font shape `TU/TimesNewRoman(0)/bx/it' tried instead on inp
-ut line 94.
- [2] (./DDoS-Defense-by-Offense.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 100.
+Overfull \hbox (0.11708pt too wide) in paragraph at lines 78--79
+\TU/TimesNewRoman(0)/m/n/14.4 maus clientes estaram cosumindo sua taxa de uploa
+d, eles demostram dois meto-
+ []
+
+
+Overfull \hbox (0.36787pt too wide) in paragraph at lines 78--79
+\TU/TimesNewRoman(0)/m/n/14.4 dos de sistemas de cobrança (Moeda de Troca), o p
+rimeiro utiliza um um quebra-
+ []
+
+[2] (./DDoS-Defense-by-Offense.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 101.
  [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 100.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 101.
  (./DDoS-Defense-by-Offense.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 100.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 100.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 101.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 101.
  ) 
 Here is how much of TeX's memory you used:
- 20136 strings out of 493068
- 392904 string characters out of 6137720
+ 20130 strings out of 493068
+ 392704 string characters out of 6137720
  448691 words of memory out of 5000000
- 23882 multiletter control sequences out of 15000+600000
- 7367 words of font info for 35 fonts, out of 8000000 for 9000
+ 23879 multiletter control sequences out of 15000+600000
+ 7351 words of font info for 33 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
- 39i,12n,66p,10437b,422s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,11n,66p,10437b,395s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on DDoS-Defense-by-Offense.pdf (3 pages).

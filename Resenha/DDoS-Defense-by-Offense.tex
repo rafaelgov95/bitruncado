@@ -46,13 +46,14 @@ O artigo DDoS Defense by Offense \cite{Walfish:2006:DDO:1151659.1159948} dos aut
 Nas duas primeiras páginas do artigo os autores propoem uma defesa para servidores contra nivel de aplicação DDoS, o speak-up onde os clientes (legitimos e não legitimos ) são incentivados a enviar mais tráfego para um servidor atacado, esse conceito foi analisado ao decorrer do artigo
 
 \vspace{0.5cm}
-Com o speak-up, um servidor vitimado incentiva todos os clientes, a  enviar automaticamente maiores volumes de tráfego, supondo que os atacantes já estão usando a maior parte de sua banda de upload por isso não pode reagir ao estímulo. Bons clientes, no entanto, tem largura de banca de upload de reposição e vai reagir ao estimolo com volumes drasticamente mais elevados tráfego fim a fim.
+Os autores apresentão um sistema de defesa denominado speak-up, onde um servidor vitimado incentiva todos os clientes, a enviar automaticamente maiores volumes de tráfego, supondo que os atacantes já estão usando a maior parte de sua banda de upload por isso não pode reagir ao estímulo. Bons clientes, no entanto, tem largura de banda de upload de reposição e vai reagir ao estimolo com volumes drasticamente mais elevados de tráfego fim a fim.
+
 \vspace{0.5cm}
 
-Com auxilio de calculos de desempenho demostram  a diferença entre  sistemas tradicionais de defesa por Detecção e bloqueio que utilizam o IPs de roteadores ou dos atacantes  para tentar cessar o ataque,  em  Currency Trading (Moeda de Troca),  sistemas de defesa que utilizam a largura de banda como moeda de troca,  um servidor atacado só aceita um serviço de cliente, somente depois que ele paga em alguma moeda. Exemplos ciclo de  CPU ou memória ( a comprovação do pagamento é a solução de um quebra-cabeça computacional)
+No corpo do artigo os autores com auxilio de calculos de desempenho demostram  a diferença entre sistemas tradicionais de defesa por Detecção e Bloqueio que utilizam o IPs de roteadores ou dos atacantes para tentar cessar o ataque, em sistemas de Currency Trading (Moeda de Troca),  sistemas de defesa que utilizam a largura de banda como moeda de troca, um servidor atacado só aceita um serviço de cliente, somente depois que ele paga em alguma moeda. Exemplos ciclo de  CPU ou memória ( a comprovação do pagamento é a solução de um quebra-cabeça computacional)
 \vspace{0.5cm}
 
-Na página quatro os autores demostram os modelos e as condições de aplicabilidade sobre o  speak-up, os mesmos afirmam que com diferentes exigências defensivas, o speak-up não e apropriado para todas elas, e para se defender com essa tecnica tem que respeitar as sequintes condições: 
+Após os calculos os autores demostram os modelos e as condições de aplicabilidade sobre o speak-up, os mesmos afirmam que com diferentes exigências defensivas, o speak-up não e apropriado para todas elas, e para se defender com essa tecnica tem que respeitar as sequintes condições: 
 \vspace{1cm}
 \begin{enumerate}
 	\item{C1} Ligação de banda adequada.
@@ -65,30 +66,30 @@ Na página quatro os autores demostram os modelos e as condições de aplicabili
 
 \end{enumerate}
  
- Os autores nas pǵinas 5 -6 sempre voltam para o a mesma observação que o speak-up é motivada por uma simples observação sobre maus clientes: eles enviam
- apertos de mão de três vias ( por exemplo,
- solicitações para servidores vítimas a taxas muito mais elevadas do que os clientes
- DNS-sobre-UDP), spoo fi ng é trivial, e mesmo para protocolos com apertos de mão de
- legítimos fazer.
- 
  \vspace{0.5cm}
  
- Por agora,
- sempre identificáveis ​ como tal.
- assumimos que maus clientes esgotar toda a sua largura de banda disponível em
+ Os autores assumem que maus clientes esgotar toda a sua largura de banda disponível em
  solicitações espúrias. Em contraste, os bons clientes, que gastam tempo substancial de
- Não estamos considerando ataques de link. Nós assumimos que os links de acesso do
- repouso, são provavelmente a utilizar uma única parcela pequena de sua largura de banda
+ não estam considerando ataques de link. Eles assumem que os links de acesso do
+ repouso, utilizam provavelmente uma única parcela pequena de sua largura de banda
  do servidor. A ideia-chave de speak-up é explorar essa diferença.
  \vspace{0.5cm}
  
- Apos alguns exemplos de taxometria e verificações os autores falam sobre as desvagatens de esquemas baseados em moedas, eles percebem que em primeiro lugar os clientes bons deve ter dinheiro (Largura de banda) suficiente e segundo que a moeda poder ser distribuida de forma desigual(por exemlo, alguns clientes têm uplinks mais rápidos do que outros). Outra cirtica dos sistemas de moeda é que eles dão atacanes alguns serviço assim poderia ser mais fraco doque os esquemas como o Profiling que buscam enquadrar atacantes, porem alguns botnets inteligentes pode imitar um bom cliente , terd sucesso em enganar o sistema de detecção, e novamente obter serviços.
+ Com a premisa que os autores apresentão durante o artigo, que sempre os maus clientes estaram cosumindo sua taxa de upload, eles demostram dois metodos de sistemas de cobrança (Moeda de Troca), o primeiro utiliza um um quebra-cabeça computacional, onde quem tiver melhor o dezempenho obtém serviço, e o segundo onde uma especie de leilão e implementado quem conseguir ter a maior largura de banda de uplod obtem serviço. 
  
  \vspace{0.5cm}
  
- Mesmo sob as condições que o speak-up e apliável, ainda podem levantar objeções como e o exemplo de alguns clientes de paises nao desenvolvido que possuem ISPs de baixa largura de banda, fazendo com que Atacantes que tem um recurso melhor de banda se passe por clientes bons 
+ Apos alguns exemplos de taxometria e verificações encima do speak-up e dos dois modelos, os autores falam sobre as desvagatens de esquemas baseados em moedas, eles percebem que em primeiro lugar os clientes bons deve ter dinheiro (Largura de banda) suficiente e segundo que a moeda poder ser distribuida de forma desigual(por exemlo, alguns clientes têm uplinks mais rápidos do que outros). Outra cirtica dos sistemas de moeda é que eles dão aos atacanes alguns serviço assim poderia ser mais fraco do que os esquemas como o profiling que buscam enquadrar atacantes, porem alguns botnets inteligentes pode imitar um bom cliente, tendo sucesso em enganar o sistema de detecção, e novamente obter serviços.
+ 
+ \vspace{0.5cm}
+ 
+ 
+ Mesmo sob as condições que o speak-up e apliável, ainda podem levantar objeções como e o exemplo de alguns clientes de paises onde possuem conexões ISPs de baixa largura de banda, fazendo com que atacantes que tem um recurso melhor de banda se passe por clientes bons outra objeção demostrado e que o esquema de moeda ainda fornece serviço no começo para clientes maus e bons até que os clientes legitimos acabem os expulsando pelo auto nível de uplod utilizado pelos os mesmos.
+ 
+ 
  
 \vspace{4cm}
+
 
 \begin{center}
 \centering{\textbf{Rafael Gonçalves de Oliveira Viana \\ Ramon da Silva Varjão dos Santos \\   Graduandos de Sistemas de Informação.}
