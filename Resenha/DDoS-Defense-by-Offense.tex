@@ -36,11 +36,13 @@
 Resenha Crítica do Artigo DDoS Defense by Offense
 \large
 
-\subsection*{\textbf{ACM SIGCOMM } Computer Communication Review - Proceedings of the 2006 conference on Applications, technologies, architectures, and protocols for computer communications, Pages 303-314.}
+\subsection*{
+	 ACM SIGCOMM  Computer Communication Review - Proceedings of the 2006 conference on Applications, technologies, architectures, and protocols for computer communications, Pages 303-314.
+}
+
 \vspace{0.3cm}
 
-
-O artigo DDoS Defense by Offense \cite{Walfish:2006:DDO:1151659.1159948} dos autores Michael Walfish, Mythili Vutukuru, Hari Balakrishnan, David Karger  e  Scott Shenker do MIT (Instituto de Tecnologia Massachusetts), apresenta a concepção, implementação, analise e avaliação experimental de speak-up, uma defesa contra ataques distribuídos de negação de serviço (DDoS) em que os atacantes paralisam um servidor enviando solicitações aparentemente legítimas que consomem o recursos computacioais (como ciclios CPU, disco, memória entre outros).
+ O artigo DDoS Defense by Offense \cite{Walfish:2006:DDO:1151659.1159948} dos autores Michael Walfish, Mythili Vutukuru, Hari Balakrishnan, David Karger  e  Scott Shenker do MIT (Instituto de Tecnologia Massachusetts), apresenta a concepção, implementação, analise e avaliação experimental de \textit{speak-up}, uma defesa contra ataques distribuídos de negação de serviço (DDoS) em que os atacantes paralisam um servidor enviando solicitações aparentemente legítimas que consomem o recursos computacioais (como ciclios CPU, disco, memória entre outros).
 
 
 \vspace{0.3cm}
@@ -62,7 +64,7 @@ Com a premisa que os autores apresentão durante o artigo, sendo ela que sempre 
 \vspace{0.3cm}
 
 
-Após os calculos os autores demostram em gráficos as condições de aplicabilidade sobre o speak-up, os mesmos afirmam que com diferentes, exigências defensivas, o speak-up não é apropriado para todas elas, e para se defender com essa tecnica tem que respeitar as sequintes condições: 
+Após os calculos os autores demostram em gráficos as condições de aplicabilidade sobre o \textit{speak-up}, os mesmos afirmam que com diferentes, exigências defensivas, o \textit{speak-up} não é apropriado para todas elas, e para se defender com essa tecnica tem que respeitar as sequintes condições: 
 
 \begin{enumerate}
 	\item{C1} Ligação de banda do servidor/cliente adequada.
@@ -75,20 +77,20 @@ Após os calculos os autores demostram em gráficos as condições de aplicabili
  
  \vspace{0.3cm}
  
- Após sua aplicabilidade e resultados levantados os autores mostram como os maus clientes esgotar toda a sua largura de banda disponível em solicitações espúrias. Em contraste, os bons clientes, que gastam tempo substancial em repouso, utilizam provavelmente uma parcela pequena de sua largura de banda do servidor. A ideia-chave de speak-up é explorar essa diferença.
+ Após sua aplicabilidade e resultados levantados os autores mostram como os maus clientes esgotar toda a sua largura de banda disponível em solicitações espúrias. Em contraste, os bons clientes, que gastam tempo substancial em repouso, utilizam provavelmente uma parcela pequena de sua largura de banda do servidor. A ideia-chave de \textit{speak-up} é explorar essa diferença.
  \vspace{0.3cm}
  
  \vspace{0.3cm}
  
- Os autores mostram alguns exemplos reais e verificações, encima do speak-up, os autores falam sobre as desvagatens de esquemas baseados em moedas, eles percebem que em primeiro lugar os clientes bons deve ter dinheiro (Largura de banda) suficiente e segundo que a moeda poder ser distribuida de forma desigual (por exemlo, alguns clientes têm uplinks mais rápidos do que outros). Outra crítica dos sistemas de moeda é que eles dão aos atacanes alguns serviço assim poderia ser mais fraco do que os esquemas como o profiling que buscam enquadrar atacantes, assim alguns botnets inteligentes pode imitar um bom cliente, tendo sucesso em enganar o sistema de detecção, e novamente obter serviços.
+ Os autores mostram alguns exemplos reais e verificações, encima do \textit{speak-up}, os autores falam sobre as desvagatens de esquemas baseados em moedas, eles percebem que em primeiro lugar os clientes bons deve ter dinheiro (Largura de banda) suficiente e segundo que a moeda poder ser distribuida de forma desigual (por exemlo, alguns clientes têm uplinks mais rápidos do que outros). Outra crítica dos sistemas de moeda é que eles dão aos atacanes alguns serviço assim poderia ser mais fraco do que os esquemas como o profiling que buscam enquadrar atacantes, assim alguns botnets inteligentes pode imitar um bom cliente, tendo sucesso em enganar o sistema de detecção, e novamente obter serviços.
  
  \vspace{0.3cm}
  
  
- Embora sob as condições que o speak-up e apliável, ainda podem levantar objeções, uma problematica seria que vários países, possuem conexões ISPs de baixa largura de banda, fazendo com que atacantes que tem um recurso melhor de banda se passe por clientes bons, outra objeção seria referente ao esquema de moeda, antes de um cliente légitimos ou não legitimos compre uma parcela os mesmos estaram disputando recursos e consumindo serviços antes do pagamento, até que os clientes legitimos acabem expulsando os não legitimos, em função do alto nível de upload utilizados pelos atacantes, com o teorema apresentado neste artigo que sempre um atacante esta com sua taxa de upload sempre elevada, pode-se assim abrir brexas para sistemas de BootNets sofisticados que tentam se passar por clientes normais, cada agente da rede de bootnet envia emm uma taxa de largura de banda controlada, como citado no artigo \cite{7160662}.
-\vspace{0.3cm}
+ Embora sob as condições que o \textit{speak-up} e apliável, ainda podem levantar objeções, uma problematica seria que vários países, possuem conexões ISPs de baixa largura de banda, fazendo com que atacantes que tem um recurso melhor de banda se passe por clientes bons, outra objeção seria referente ao esquema de moeda, antes de um cliente légitimos ou não legitimos compre uma parcela os mesmos estaram disputando recursos e consumindo serviços antes do pagamento, até que os clientes legitimos acabem expulsando os não legitimos, em função do alto nível de upload utilizados pelos atacantes, com o teorema apresentado neste artigo que sempre um atacante esta com sua taxa de upload sempre elevada, pode-se assim abrir brexas para sistemas de BootNets sofisticados que tentam se passar por clientes normais, cada agente da rede de bootnet envia emm uma taxa de largura de banda controlada, como citado no artigo \cite{7160662}.
+\vspace{0.2cm}
 
- Assim concluimos que o speak-up, seria funcional sendo utilizado em conjunto com outras tecnicas existentes, algumas citadas em \cite{7821722}, sendo assim  o melhor método para se defender de ataques DDoS e sempre utilizar um conjunto de verificações tanto na infra-instutura quanto nas ferramentas de segurança utilizadas, assim combinando suas caracteriscas visando criar uma resistência (escudo), contra ataques de negação de serviço.  
+ Assim concluimos que o \textit{speak-up}, seria funcional sendo utilizado em conjunto com outras tecnicas existentes, algumas citadas em \cite{7821722}, sendo assim  o melhor método para se defender de ataques DDoS e sempre utilizar um conjunto de verificações tanto na infra-instutura quanto nas ferramentas de segurança utilizadas, assim combinando suas caracteriscas visando criar uma resistência (escudo), contra ataques de negação de serviço.  
  
  
  
