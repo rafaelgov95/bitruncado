@@ -42,29 +42,29 @@ Resenha Crítica do Artigo DDoS Defense by Offense
 
 \vspace{0.3cm}
 
- O artigo DDoS Defense by Offense \cite{Walfish:2006:DDO:1151659.1159948} dos autores Michael Walfish, Mythili Vutukuru, Hari Balakrishnan, David Karger  e  Scott Shenker do MIT (Instituto de Tecnologia Massachusetts), apresenta a concepção, implementação, analise e avaliação experimental de \textit{speak-up}, uma defesa contra ataques distribuídos de negação de serviço (DDoS) em que os atacantes paralisam um servidor enviando solicitações aparentemente legítimas que consomem o recursos computacioais (como ciclios CPU, disco, memória entre outros).
+ O artigo DDoS Defense by Offense \cite{Walfish:2006:DDO:1151659.1159948} dos autores Michael Walfish, Mythili Vutukuru, Hari Balakrishnan, David Karger  e  Scott Shenker do MIT (Instituto de Tecnologia Massachusetts), apresenta a concepção, implementação, análise e avaliação experimental de \textit{speak-up}, uma defesa contra ataques distribuídos de negação de serviço (DDoS) em que os atacantes paralisam um servidor enviando solicitações aparentemente legítimas que consomem os recursos computacioais (como ciclos CPU, disco, memória entre outros).
 
 
 \vspace{0.3cm}
 
- Logo nas primeiras páginas do artigo, os autores propõe um sistema de defesa para servidores contra nivel de aplicação DDoS, onde os clientes (legitimos e não legitimos ) são incentivados a enviar mais tráfego para um servidor atacado, esse conceito foi analisado ao decorrer do artigo.
+ Logo nas primeiras páginas do artigo, os autores propõe um sistema de defesa para servidores contra nível de aplicação DDoS, onde os clientes (legítimos e não legítimos) são incentivados a enviar mais tráfego para um servidor atacado, esse conceito foi analisado ao decorrer do artigo.
 
 \vspace{0.3cm}
-Com alguns exemplos pretendem esclarecer o principio eo funcionamento do speak-up, onde um servidor vitimado incentiva todos os clientes, a enviar automaticamente maiores volumes de tráfego, supondo que os atacantes já estão usando a maior parte de sua banda de upload por isso não pode reagir ao estímulo. Já os bons clientes, no entanto, tem largura de banda de upload de reposição e vai reagir ao estimolo com volumes drasticamente elevados de tráfego fim a fim.
-
-\vspace{0.3cm}
-
-No meio do artigo os autores com auxílio de calculos de desempenho demostram  a diferença entre sistemas tradicionais de defesa por Detecção e Bloqueio que utilizam o datagrama IP, vindo de roteadores(no núcleo da rede) ou dos atacantes para tentar cessar o ataque, porem em sistemas de Currency Trading (Moeda de Troca), esses sistemas utilizam a largura de banda como moeda de troca, criando assim um sistema de defesa, por exemplo um servidor atacado só aceita um serviço de cliente, somente depois que ele pagar em alguma moeda(recursos), um exemplo de moeda seria ciclos de CPU e/ou memória. 
+Com alguns exemplos os autores pretendem esclarecer o princípio e o funcionamento do speak-up, onde um servidor vitimado incentiva todos os clientes, a enviar automaticamente maiores volumes de tráfego, supondo que os atacantes já estão usando a maior parte de sua banda de upload por isso não pode reagir ao estímulo. Já os bons clientes, no entanto, tem largura de banda de upload de reposição e vai reagir ao estímulo com volumes drasticamente elevados de tráfego fim a fim.
 
 \vspace{0.3cm}
 
-
-Com a premisa que os autores apresentão durante o artigo, sendo ela que sempre os maus clientes estaram cosumindo toda sua taxa de upload espurios, eles demostram dois modelos de sistemas de cobrança (Moeda de Troca). O primeiro utiliza um quebra-cabeça computacional como forma de pagamento, aquele que dicifrar obtém serviço, e o segundo modelo onde uma espécie de leilão e implementado quem conseguir ter a maior largura de banda ofertada pelo servidor obtem serviço. 
+No meio do artigo os autores com auxílio de cálculos de desempenho que demonstram a diferença entre sistemas tradicionais de defesa por Detecção e Bloqueio que utilizam o datagrama IP, vindo de roteadores(no núcleo da rede) ou dos atacantes para tentar cessar o ataque, porém em sistemas de \textit{Currency Trading} (Moeda de Troca), esses sistemas utilizam a largura de banda como moeda de troca, criando assim um sistema de defesa, por exemplo um servidor somente aceita uma requisição de serviço do cliente, depois que o mesmo pagar em algum tipo de moeda(recursos), um exemplo de moeda seria ciclos de CPU e/ou memória. 
 
 \vspace{0.3cm}
 
 
-Após os calculos os autores demostram em gráficos as condições de aplicabilidade sobre o \textit{speak-up}, os mesmos afirmam que com diferentes, exigências defensivas, o \textit{speak-up} não é apropriado para todas elas, e para se defender com essa tecnica tem que respeitar as sequintes condições: 
+Com a premissa que os autores apresentam durante o artigo, que sempre os maus clientes, estaram cosumindo toda sua taxa de upload em requisições espúrias, eles indicam dois modelos de sistemas de cobrança (Moeda de Troca). O primeiro utiliza um quebra-cabeça computacional como forma de pagamento, aquele que decifrar obtêm o serviço, e o segundo modelo onde uma espécie de leilão é implementado e quem conseguir ter a maior largura de banda ofertada pelo servidor obtêm serviço. 
+
+\vspace{0.3cm}
+
+
+Após os cálculos os autores demostram em gráficos as condições de aplicabilidade sobre o \textit{speak-up}, os mesmos afirmam que com diferentes exigências defensivas, o \textit{speak-up} não é apropriado para todas elas, e para se defender com essa técnica tem que respeitar as seguintes condições: 
 
 \begin{enumerate}
 	\item{C1} Ligação de banda do servidor/cliente adequada.
@@ -77,17 +77,17 @@ Após os calculos os autores demostram em gráficos as condições de aplicabili
  
  \vspace{0.3cm}
  
- Após sua aplicabilidade e resultados levantados os autores mostram como os maus clientes esgotar toda a sua largura de banda disponível em solicitações espúrias. Em contraste, os bons clientes, que gastam tempo substancial em repouso, utilizam provavelmente uma parcela pequena de sua largura de banda do servidor. A ideia-chave de \textit{speak-up} é explorar essa diferença.
+ Após sua aplicabilidade e resultados levantados os autores mostram como os maus clientes esgotam toda a sua largura de banda disponível em solicitações espúrias. Em contraste, os bons clientes, que gastam tempo substancial em repouso, utilizam provavelmente uma parcela pequena de sua largura de banda do servidor. A ideia-chave de \textit{speak-up} é explorar essa diferença.
  \vspace{0.3cm}
  
  \vspace{0.3cm}
  
- Os autores mostram alguns exemplos reais e verificações, encima do \textit{speak-up}, os autores falam sobre as desvagatens de esquemas baseados em moedas, eles percebem que em primeiro lugar os clientes bons deve ter dinheiro (Largura de banda) suficiente e segundo que a moeda poder ser distribuida de forma desigual (por exemlo, alguns clientes têm uplinks mais rápidos do que outros). Outra crítica dos sistemas de moeda é que eles dão aos atacanes alguns serviço assim poderia ser mais fraco do que os esquemas como o profiling que buscam enquadrar atacantes, assim alguns botnets inteligentes pode imitar um bom cliente, tendo sucesso em enganar o sistema de detecção, e novamente obter serviços.
+ Os autores mostram alguns exemplos reais e verificações, encima do \textit{speak-up}, os mesmos falam sobre as desvagatens de esquemas baseados em moedas, eles percebem que em primeiro lugar os clientes bons devem ter dinheiro (Largura de banda) suficiente e segundo que a moeda pode ser distribuída de forma desigual (por exemlo, alguns clientes têm uplinks mais rápidos do que outros). Outra crítica dos sistemas de moeda é que eles dão aos atacanes alguns serviços, assim poderia ser mais fraco do que os esquemas como o profiling que buscam enquadrar atacantes, assim alguns botnets inteligentes podem imitar um bom cliente, tendo sucesso em enganar o sistema de detecção, e obter serviços.
  
  \vspace{0.3cm}
  
  
- Embora sob as condições que o \textit{speak-up} e apliável, ainda podem levantar objeções, uma problematica seria que vários países, possuem conexões ISPs de baixa largura de banda, fazendo com que atacantes que tem um recurso melhor de banda se passe por clientes bons, outra objeção seria referente ao esquema de moeda, antes de um cliente légitimos ou não legitimos compre uma parcela os mesmos estaram disputando recursos e consumindo serviços antes do pagamento, até que os clientes legitimos acabem expulsando os não legitimos, em função do alto nível de upload utilizados pelos atacantes, com o teorema apresentado neste artigo que sempre um atacante esta com sua taxa de upload elevada, pode-se assim abrir brexas para sistemas de BootNets sofisticados que tentam se passar por clientes normais, cada agente da rede de bootnet envia em uma taxa de largura de banda controlada, como citado no artigo \cite{7160662}.
+ Embora sob as condições que o \textit{speak-up} é aplicável, ainda podem levantar objeções, uma problemática seria que vários países, possuem conexões ISPs de baixa largura de banda, fazendo com que atacantes que tem um recurso melhor de banda se passe por clientes bons, outra objeção seria referente ao esquema de moeda, antes de um cliente legítimo ou não legítimo compre uma parcela, os mesmos estaram disputando recursos e consumindo serviços antes do pagamento, até que os clientes legítimos acabem expulsando os não legítimos, em função do alto nível de upload utilizados pelos atacantes, com o teorema apresentado neste artigo, sendo ele que sempre um atacante esta com sua taxa de upload elevada, pode-se assim abrir brexas para sistemas de BotNets sofisticados que tentam se passar por clientes normais, cada agente da rede de botnet envia em uma taxa de largura de banda controlada, como citado no artigo \cite{7160662}.
 \vspace{0.2cm}
 
  Assim concluímos que o \textit{speak-up}, seria funcional sendo utilizado em conjunto com outras tecnicas existentes, algumas citadas em \cite{7821722}, sendo assim  o melhor método para se defender de ataques DDoS e sempre utilizar um conjunto de verificações tanto na infraestrutura de rede quanto nas ferramentas de segurança utilizadas em camada de aplicação, assim combinando suas caracteriscas visando criar uma resistência (escudo), contra ataques de negação de serviço.  
