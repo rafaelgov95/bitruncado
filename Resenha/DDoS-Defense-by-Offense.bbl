@@ -1,10 +1,22 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
 
-\bibitem[\protect\astroncite{Walfish
-  et~al.}{2006}]{Walfish:2006:DDO:1151659.1159948}
-Walfish, M., Vutukuru, M., Balakrishnan, H., Karger, D., and Shenker, S.
-  (2006).
+\bibitem{7160662}
+N.~Hoque, D.~K. Bhattacharyya, and J.~K. Kalita.
+\newblock Botnet in ddos attacks: Trends and challenges.
+\newblock {\em IEEE Communications Surveys Tutorials}, 17(4):2242--2270,
+  Fourthquarter 2015.
+
+\bibitem{7821722}
+S.~R. Talpur and T.~Kechadi.
+\newblock A survey on ddos attacks: Router-based threats and defense mechanism
+  in real-world data centers.
+\newblock In {\em 2016 Future Technologies Conference (FTC)}, pages 978--984,
+  Dec 2016.
+
+\bibitem{Walfish:2006:DDO:1151659.1159948}
+Michael Walfish, Mythili Vutukuru, Hari Balakrishnan, David Karger, and Scott
+  Shenker.
 \newblock Ddos defense by offense.
-\newblock {\em SIGCOMM Comput. Commun. Rev.}, 36(4):303--314.
+\newblock {\em SIGCOMM Comput. Commun. Rev.}, 36(4):303--314, August 2006.
 
 \end{thebibliography}
